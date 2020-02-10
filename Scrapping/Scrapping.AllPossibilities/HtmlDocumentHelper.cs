@@ -16,7 +16,7 @@ namespace Scrapping.AllPossibilities
         /// <returns></returns>
         public static HtmlNode GetNodeByParams(HtmlNode htmlNode, string tagName, string attributeName, string attributeValue)
         {
-            return htmlNode.SelectSingleNode($".//{tagName}[@{attributeName}={attributeValue}]");
+            return htmlNode.SelectSingleNode($".//{tagName}[@{attributeName}='{attributeValue}']");
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace Scrapping.AllPossibilities
         /// <returns></returns>
         public static HtmlNodeCollection GetNodesByParams(HtmlNode htmlNode, string tagName, string attributeName, string attributeValue)
         {
-            return htmlNode.SelectNodes($".//{tagName}[@{attributeName}={attributeValue}]");
+            return htmlNode.SelectNodes($".//{tagName}[@{attributeName}='{attributeValue}']");
         }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace Scrapping.AllPossibilities
         /// <returns></returns>
         public static HtmlNode GetNodeByParamsByAttrValueContains(HtmlNode htmlNode, string tagName, string attributeName, string attributeValue)
         {
-            return htmlNode.SelectSingleNode($".//{tagName}[contains(@{attributeName},{attributeValue})]");
+            return htmlNode.SelectSingleNode($".//{tagName}[contains(@{attributeName},'{attributeValue}')]");
         }
 
         /// <summary>
@@ -137,7 +137,7 @@ namespace Scrapping.AllPossibilities
         /// <returns></returns>
         public static HtmlNodeCollection GetNodesByParamsByAttrValueContains(HtmlNode htmlNode, string tagName, string attributeName, string attributeValue)
         {
-            return htmlNode.SelectNodes($".//{tagName}[contains(@{attributeName},{attributeValue})]");
+            return htmlNode.SelectNodes($".//{tagName}[contains(@{attributeName},'{attributeValue}')]");
         }
 
         /// <summary>
