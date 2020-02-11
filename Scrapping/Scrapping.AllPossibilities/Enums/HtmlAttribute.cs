@@ -1,9 +1,8 @@
 ﻿namespace Scrapping.AllPossibilities.Enums
 {
-    public enum Attribute
+    public enum HtmlAttribute
     {
         id,
-        _class,
-
+        _class
     }
 }

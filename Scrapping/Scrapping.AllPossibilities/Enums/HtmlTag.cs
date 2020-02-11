@@ -1,6 +1,6 @@
 ﻿namespace Scrapping.AllPossibilities.Enums
 {
-    public enum Tag
+    public enum HtmlTag
     {
         html,
         body,
