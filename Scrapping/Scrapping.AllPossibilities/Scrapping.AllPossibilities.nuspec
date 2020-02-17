@@ -11,8 +11,8 @@
     <iconUrl>https://raw.githubusercontent.com/VanHakobyan/Nugets/master/vh.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Added new features.</releaseNotes>
+    <releaseNotes>bug fix.</releaseNotes>
     <copyright>Copyright 2020</copyright>
-    <tags>scrapping selenium html xpath AgilityPack</tags>
+    <tags>scrapping selenium html xpath agilitypack</tags>
   </metadata>
 </package>
