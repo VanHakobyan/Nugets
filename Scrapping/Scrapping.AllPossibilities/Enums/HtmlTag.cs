@@ -19,6 +19,10 @@
         img,
         div,
         iframe,
-        table
+        table,
+        tr,
+        td,
+        link,
+        script
     }
 }
