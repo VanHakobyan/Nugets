@@ -14,15 +14,21 @@
         i,
         b,
         a,
+        u,
         ul,
         hr,
         img,
         div,
         iframe,
         table,
+        tbody,
         tr,
         td,
         link,
-        script
+        script,
+        svg,
+        span,
+        picture,
+        li,
     }
 }
