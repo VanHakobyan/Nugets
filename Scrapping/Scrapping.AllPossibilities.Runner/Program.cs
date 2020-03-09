@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Scrapping.AllPossibilities.Http;
 using Scrapping.AllPossibilities.Selenium;
 
 namespace Scrapping.AllPossibilities.Runner
@@ -11,7 +12,8 @@ namespace Scrapping.AllPossibilities.Runner
     {
         static void Main(string[] args)
         {
-            var chromeDriver = ChromeDriverBuilder.CreateChromeDriver();
+            HeaderBuilder.BuildOwnHeaders(new HeaderModel() {Accept_Charset = "fluihgyu"});
+            var chromeDriver = ChromeDriverBuilder.CreateChromeDriver(new BuilderModel { Incognito = true });
             chromeDriver.Navigate().GoToUrl("https://www.youtube.com/");
         }
     }
