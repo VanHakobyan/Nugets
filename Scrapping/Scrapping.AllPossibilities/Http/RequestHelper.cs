@@ -67,46 +67,50 @@ namespace Scrapping.AllPossibilities.Http
                 }
             }
 
-            if (method == "GET")
+            switch (method)
             {
-                using (var r = (HttpWebResponse)(await request.GetResponseAsync()))
+                case "GET":
                 {
-                    using (var dataStream = r.GetResponseStream())
+                    using (var r = (HttpWebResponse)(await request.GetResponseAsync()))
                     {
-                        using (var buffer = new BufferedStream(dataStream))
+                        using (var dataStream = r.GetResponseStream())
                         {
-                            using (var readerStream = new StreamReader(buffer))
+                            using (var buffer = new BufferedStream(dataStream))
                             {
-                                response = await readerStream.ReadToEndAsync();
+                                using (var readerStream = new StreamReader(buffer))
+                                {
+                                    response = await readerStream.ReadToEndAsync();
+                                }
                             }
                         }
                     }
+
+                    return response;
                 }
 
-                return response;
-            }
-            else if (method == "POST")
-            {
-                var data = Encoding.ASCII.GetBytes(payload);
-                request.ContentLength = payload.Length;
-                using (var stream = request.GetRequestStream())
+                case "POST":
                 {
-                    stream.Write(data, 0, data.Length);
-                }
-
-                using (var postResponse = (HttpWebResponse)request.GetResponse())
-                {
-                    using (var responseStream = new StreamReader(postResponse.GetResponseStream()))
+                    var data = Encoding.ASCII.GetBytes(payload);
+                    request.ContentLength = payload.Length;
+                    using (var stream = request.GetRequestStream())
                     {
-                        response = responseStream.ReadToEnd();
+                        stream.Write(data, 0, data.Length);
                     }
+
+                    using (var postResponse = (HttpWebResponse)request.GetResponse())
+                    {
+                        using (var responseStream = new StreamReader(postResponse.GetResponseStream()))
+                        {
+                            response = responseStream.ReadToEnd();
+                        }
+                    }
+
+                    return response;
                 }
 
-                return response;
+                default:
+                    return null;
             }
-
-
-            return null;
         }
     }
 }
