@@ -38,5 +38,31 @@ namespace Scrapping.AllPossibilities
                 return false;
             }
         }
+
+        //TODO: Will TEST.
+        public static bool WriteCollectionToCsvNew<T>(IEnumerable<T> items, string path)
+        {
+            try
+            {
+                var itemType = typeof(T);
+                var props = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+                using (var writer = new StreamWriter(path))
+                {
+                    writer.WriteLine($"\"{string.Join(", ", props.Select(p => p.Name))}\"");
+
+                    foreach (var item in items)
+                    {
+                        writer.WriteLine($"\"{string.Join(", ", props.Select(p => p.GetValue(item, null)))}\"");
+                    }
+                }
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
