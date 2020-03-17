@@ -13,11 +13,15 @@ namespace Scrapping.AllPossibilities
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="items"></param>
-        /// <param name="path"></param>
+        /// <param name="path">Full path with extension</param>
         public static bool WriteCollectionToCsv<T>(IEnumerable<T> items, string path)
         {
             try
             {
+                if (!File.Exists(path))
+                {
+                    File.Create(path);
+                }
                 var itemType = typeof(T);
                 var props = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance);
 

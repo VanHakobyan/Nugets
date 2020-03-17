@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/VanHakobyan/Nugets/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/VanHakobyan/Nugets</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/VanHakobyan/Nugets/master/vh.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>bug fix.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>scrapping selenium html xpath agilitypack</tags>
+  </metadata>
+</package>
