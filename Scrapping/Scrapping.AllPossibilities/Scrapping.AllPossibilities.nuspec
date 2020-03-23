@@ -13,6 +13,6 @@
     <description>$description$</description>
     <releaseNotes>bug fix.</releaseNotes>
     <copyright>Copyright 2020</copyright>
-    <tags>scrapping selenium html xpath agilitypack</tags>
+    <tags>scrapping selenium html xpath AgilityPack regex van Vanik Hakobyan parse http tag</tags>
   </metadata>
 </package>

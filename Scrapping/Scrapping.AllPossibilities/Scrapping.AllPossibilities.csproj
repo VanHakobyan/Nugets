@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
     <Authors>Vanik Hakobyan</Authors>
     <PackageIcon>vh.jpg</PackageIcon>
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/VanHakobyan/Nugets</RepositoryUrl>
-    <PackageTags>Scrapping selenium html xPath AgilityPack</PackageTags>
-    <PackageReleaseNotes>added new features</PackageReleaseNotes>
+    <PackageTags>scrapping selenium html xpath AgilityPack regex van Vanik Hakobyan parse http tag</PackageTags>
+    <PackageReleaseNotes>added regex http and more</PackageReleaseNotes>
     <Description>Help using selenium and HtmlAgilityPack</Description>
     <NeutralLanguage />
   </PropertyGroup>
