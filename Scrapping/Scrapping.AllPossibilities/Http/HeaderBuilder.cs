@@ -28,6 +28,7 @@ namespace Scrapping.AllPossibilities.Http
             if (headerModel.Access_Control_Request_Method  != null) headers.Add(nameof(headerModel.Access_Control_Request_Method ).Replace('_','-'), headerModel.Access_Control_Request_Method );
             if (headerModel.Access_Control_Request_Headers  != null) headers.Add(nameof(headerModel.Access_Control_Request_Headers ).Replace('_','-'), headerModel.Access_Control_Request_Headers );
             if (headerModel.Authorization  != null) headers.Add(nameof(headerModel.Authorization ).Replace('_','-'), headerModel.Authorization );
+            if (headerModel.Allow_Auto_Redirect  != null) headers.Add(nameof(headerModel.Allow_Auto_Redirect).Replace('_','-'), headerModel.Allow_Auto_Redirect);
             if (headerModel.Cache_Control  != null) headers.Add(nameof(headerModel.Cache_Control ).Replace('_','-'), headerModel.Cache_Control );
             if (headerModel.Connection  != null) headers.Add(nameof(headerModel.Connection ).Replace('_','-'), headerModel.Connection );
             if (headerModel.Content_Length  != null) headers.Add(nameof(headerModel.Content_Length ).Replace('_','-'), headerModel.Content_Length );

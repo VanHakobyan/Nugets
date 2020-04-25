@@ -9,6 +9,7 @@
         public string Accept_Datetime { get; set; }
         public string Access_Control_Request_Method { get; set; }
         public string Access_Control_Request_Headers { get; set; }
+        public string Allow_Auto_Redirect { get; set; }
         public string Authorization { get; set; }
         public string Cache_Control { get; set; }
         public string Connection { get; set; }

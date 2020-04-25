@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Authors>Vanik Hakobyan</Authors>
     <PackageIcon>vh.jpg</PackageIcon>
     <PackageIconUrl />
@@ -11,8 +11,8 @@
     <PackageReleaseNotes>added AllowAutoRedirect</PackageReleaseNotes>
     <Description>Help using selenium and HtmlAgilityPack</Description>
     <NeutralLanguage />
-    <AssemblyVersion>1.1.1.1</AssemblyVersion>
-    <FileVersion>1.1.1.1</FileVersion>
+    <AssemblyVersion>1.1.2.2</AssemblyVersion>
+    <FileVersion>1.1.2.2</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
