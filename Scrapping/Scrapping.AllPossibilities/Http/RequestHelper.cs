@@ -61,6 +61,9 @@ namespace Scrapping.AllPossibilities.Http
                     case "user-agent":
                         request.UserAgent = header.Value;
                         break;
+                    case "AllowAutoRedirect":
+                        request.AllowAutoRedirect = bool.Parse(header.Value);
+                        break;
                     default:
                         request.Headers.Add(header.Key, header.Value);
                         break;
