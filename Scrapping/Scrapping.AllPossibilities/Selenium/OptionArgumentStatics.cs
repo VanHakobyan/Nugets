@@ -1,5 +1,8 @@
 ﻿namespace Scrapping.AllPossibilities.Selenium
 {
+    /// <summary>
+    /// Option arguments 
+    /// </summary>
     public static class OptionArgumentStatics
     {
         public const string NoSandbox = "no-sandbox";

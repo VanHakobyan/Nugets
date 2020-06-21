@@ -1,5 +1,8 @@
 ﻿namespace Scrapping.AllPossibilities.Selenium
 {
+    /// <summary>
+    /// Chrome builder model
+    /// </summary>
     public class BuilderModel
     {
         public bool NoSandbox { get; set; }
