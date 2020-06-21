@@ -7,6 +7,11 @@ namespace Scrapping.AllPossibilities.Regex
 {
     public static class RegexHelper
     {
+        /// <summary>
+        /// Extract emails use regex 
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         public static List<string> ExtractEmails(string text)
         {
             if (string.IsNullOrEmpty(text)) return null;
