@@ -43,6 +43,13 @@ namespace Scrapping.AllPossibilities
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="items"></param>
+        /// <param name="path"></param>
+        /// <returns></returns>
         //TODO: Will TEST.
         public static bool WriteCollectionToCsvNew<T>(IEnumerable<T> items, string path)
         {
